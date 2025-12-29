@@ -9,7 +9,7 @@ const ChatWidget = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/chat';
+  const API_URL = process.env.REACT_APP_API_URL || 'https://lang-agent-mbka.onrender.com/chat';
 
   useEffect(() => {
     if (isOpen && messages.length === 0) {
